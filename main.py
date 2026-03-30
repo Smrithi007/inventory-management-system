@@ -9,8 +9,9 @@ def main():
         print("\n1. Show Products")
         print("2. Add to Cart")
         print("3. Show Categories")
-        print("4. Checkout")
-        print("5. Exit")
+        print("4. View cart")
+        print("5. Generate Recipt")
+        print("6. Exit")
 
         choice = input("Enter choice: ")
 
@@ -25,10 +26,13 @@ def main():
             manager.show_categories()
 
         elif choice == "4":
+            manager.view_cart()
+
+        elif choice == "5":
             save_receipt(manager.cart)
             print("Receipt generated!")
-        
-        elif choice == "5":
+
+        elif choice == "6":
             break
 
         else:

@@ -41,3 +41,17 @@ class InventoryManager:
     def show_categories(self):
         categories = {p.category for p in self.products}  # set
         print("Categories:", categories)
+
+    def view_cart(self):
+        if not self.cart:
+            print("Cart is empty!")
+            return
+
+        print("\n--- Your Cart ---")
+        total = 0
+
+        for item in self.cart:
+            print(f"{item.name} - Rs.{item.price}")
+            total += item.price
+
+        print(f"Total so far: Rs.{total}")

@@ -1,0 +1,4 @@
+coffee,50,10,beverage
+tea,30,15,beverage
+sandwich,80,5,food
+cake,100,3,dessert

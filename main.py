@@ -11,7 +11,7 @@ def main():
         print("3. Show Categories")
         print("4. View cart")
         print("5. Generate Recipt")
-        print("7. Exit")
+        print("6. Exit")
 
         choice = input("Enter choice: ")
 
